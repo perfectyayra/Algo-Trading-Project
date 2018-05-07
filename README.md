@@ -58,10 +58,31 @@ We realized the following methods:
 - SVM
 - Gaussian Naïve Bayes
 
+
+
+KNN:  0.957338 (0.004066)
+
+CART: 0.947136 (0.011638)
+
+RF:   0.966495 (0.004955)
+
+SVM:  0.932570 (0.008892)
+
+NB:   0.830599 (0.012240)
+
+
+
+![](Images/1.png)
+
 ## Results
 
 
-[](image/index1.png)
+![](Images/9.png)
+![](Images/2.png)
+![](Images/6.png)
+
+![](Images/7.png)
+
 
 ## References
 
