@@ -60,3 +60,11 @@ We realized the following methods:
 
 ## Results
 
+
+
+
+## References
+
+- Leung, C.K.S., MacKinnon, R.K. and Wang, Y., 2014, July. A machine learning approach for stock price prediction. In Proceedings of the 18th International Database Engineering & Applications Symposium (pp. 274-277). ACM.
+- Madge, S. and Bhatt, S., 2015. Predicting Stock Price Direction using Support Vector Machines. Independent Work Report Spring.
+- Teixeira, L.A. and De Oliveira, A.L.I., 2010. A method for automatic stock trading combining technical analysis and nearest neighbor classification. Expert systems with applications, 37(10), pp.6885-6890.
