@@ -1,30 +1,21 @@
 ALGORITHM TRADING WITH MACHINE LEARNING METHODOLOGIES
 
 
-
-
 TEAM MEMBERS
-
 Perfect Yayra Gidisu  1702010695
-
 Mathilde Bouvier      1702010703
-
 Faruk Yucel           1702010705
 
 
-
-
 INTRODUCTION
-
 "Better stock prices direction prediction is a key reference for better trading strategy and decision
 making by ordinary investors and financial experts" (Kap, Chiu, Lu and Yang; 2013).
 
-This project aims to use some machine learning methods to improve the performance of simply momentum strategy. 
-In this project, we will first formulate and code a simple momentum algorithmic trading strategy on the stocks of two Chinese companies i.e. Tencent and Baidu. And then we will use Pandas to backtest the formulated trading strategy. Afterwards, we will see how we optimize the performance of the strategy by using the following machine learning methodologies: KNN, classification and regression trees.  
+
+OBJECTIVE
+Our project aims to implement a momentum strategy based on Machine Learning methods. The data consists of Date, Open, High, Low, Last and Volume. We calculated our predictors based on various technical indicators i.e. Exponential Moving Average, Stochastic Oscillator %K and %D, Relative Strength Index (RSI), Rate Of Change (ROC), Momentum (MOM) on which model was trained in order to forecast the direction of stock price. The predictions are used to build a momentum strategy that buy/sell when the next predicted price is above/below the last closing price.
 
 
+FEATURE SELECTION
+We pulled the daily historical data from Morningstar. We chose 4 stocks (BIDU, MSFT, AAPL and TXN) in the technology sector of the NASDAQ. The time period is from 01/01/12 to 31/12/17.
 
-
-DATASET
-
-The datasets are daily historical prices data of Tencent and Baidu from 2012-01-01 to 2017-12-31 on Yahoo Finance.
