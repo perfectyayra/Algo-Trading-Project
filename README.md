@@ -12,10 +12,10 @@ Faruk Yucel           1702010705
 
 
 ## Introduction
-
+```
 "Better stock prices direction prediction is a key reference for better trading strategy and decision
 making by ordinary investors and financial experts" (Kap, Chiu, Lu and Yang; 2013).
-
+```
 
 ## Objective
 
@@ -32,3 +32,11 @@ We pulled the daily historical data from Morningstar. We chose 4 stocks (BIDU, M
 
 ## Model
 
+We realized the following methods:
+```
+KNN
+Decision Tree
+Random Forest
+SVM
+Gaussian Naïve Bayes
+```
