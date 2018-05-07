@@ -19,7 +19,7 @@ making by ordinary investors and financial experts" (Kap, Chiu, Lu and Yang; 201
 
 ## Objective
 
-Our project aims to implement a momentum strategy based on Machine Learning methods. The data consists of Date, Open, High, Low, Last and Volume. We calculated our predictors based on various technical indicators i.e. Exponential Moving Average, Stochastic Oscillator %K and %D, Relative Strength Index (RSI), Rate Of Change (ROC), Momentum (MOM) on which model was trained in order to forecast the signal for buy and sell. We create a Simple Moving Averages (SMA) of a time series with differing lookback periods, 30 days and 120 days. If the short moving average exceeds the long moving average then we go long, if the long moving average exceeds the short moving average then we exit. 
+Our project aims to implement a momentum strategy based on Machine Learning methods. The data consists of Date, Open, High, Low, Close and Volume. We calculated our predictors based on various technical indicators i.e. Exponential Moving Average, Stochastic Oscillator %K and %D, Relative Strength Index (RSI), Rate Of Change (ROC), Momentum (MOM) on which model was trained in order to forecast the signal for buy and sell. We create a Simple Moving Averages (SMA) of a time series with differing lookback periods, 30 days and 120 days. If the short moving average exceeds the long moving average then we go long, if the long moving average exceeds the short moving average then we exit. 
 
 ## Feature Selection
 
@@ -58,10 +58,31 @@ We realized the following methods:
 - SVM
 - Gaussian Naïve Bayes
 
+
+
+KNN:  0.957338 (0.004066)
+
+CART: 0.947136 (0.011638)
+
+RF:   0.966495 (0.004955)
+
+SVM:  0.932570 (0.008892)
+
+NB:   0.830599 (0.012240)
+
+
+
+![](Images/1.png)
+
 ## Results
 
 
-[](image/index1.png)
+![](Images/9.png)
+![](Images/2.png)
+![](Images/6.png)
+
+![](Images/7.png)
+
 
 ## References
 
