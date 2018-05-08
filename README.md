@@ -41,7 +41,7 @@ Where: RSI = 100 - 100 / (1 + RS)
 RS = Average gain of up/loss of down periods during the specified time frame.
 ```
 
-Rate Of Change (ROC) = ratio between a change in one variable relative to a corresponding change in another.
+Rate Of Change (ROC) = compares the current price with the previous price from a selected number of periods ago. The current price is divided by the previous price and expressed as a percentage. This indicator is also commonly known as a momentum indicator.
 
 Momentum (MOM) = The Momentum (MOM) indicator compares the current price with the previous price from a selected number of periods ago. This indicator is similar to the “Rate of Change” indicator, but the MOM does not normalize the price, so different instruments can have different indicator values based on their point values..
 
