@@ -23,7 +23,7 @@ Our project aims to implement a momentum strategy based on Machine Learning meth
 
 ## Feature Selection
 
-Exponential Moving Average (= exponentially weighted moving average) = similar to the simple moving average however more weight is given to the latest data resulting in a faster reaction to recent price changes.
+Exponential Moving Average (= exponentially weighted moving average) = The Exponential Moving Average (EMA) represents an average of prices, but places more weight on recent prices. The weighting applied to the most recent price depends on the selected period of the moving average. The shorter the period for the EMA, the more weight that will be applied to the most recent price..
 
 Stochastic Oscillator %K and %D = momentum indicator that compare, over a certain period of time, the closing price of a security to the range of its prices. 
 ```
@@ -43,7 +43,7 @@ RS = Average gain of up/loss of down periods during the specified time frame.
 
 Rate Of Change (ROC) = ratio between a change in one variable relative to a corresponding change in another.
 
-Momentum (MOM) = rate of acceleration of a security's price or volume. It is an oscillator and is used to help identify trend lines.
+Momentum (MOM) = The Momentum (MOM) indicator compares the current price with the previous price from a selected number of periods ago. This indicator is similar to the “Rate of Change” indicator, but the MOM does not normalize the price, so different instruments can have different indicator values based on their point values..
 
 ## Data
 
@@ -89,3 +89,4 @@ NB:   0.830599 (0.012240)
 - Leung, C.K.S., MacKinnon, R.K. and Wang, Y., 2014, July. A machine learning approach for stock price prediction. In Proceedings of the 18th International Database Engineering & Applications Symposium (pp. 274-277). ACM.
 - Madge, S. and Bhatt, S., 2015. Predicting Stock Price Direction using Support Vector Machines. Independent Work Report Spring.
 - Teixeira, L.A. and De Oliveira, A.L.I., 2010. A method for automatic stock trading combining technical analysis and nearest neighbor classification. Expert systems with applications, 37(10), pp.6885-6890.
+- https://www.tradingtechnologies.com/help/x-study/technical-indicator-definitions
