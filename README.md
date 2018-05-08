@@ -23,7 +23,7 @@ Our project aims to implement a momentum strategy based on Machine Learning meth
 
 ## Feature Selection
 
-Exponential Moving Average (= exponentially weighted moving average) = The Exponential Moving Average (EMA) represents an average of prices, but places more weight on recent prices. The weighting applied to the most recent price depends on the selected period of the moving average. The shorter the period for the EMA, the more weight that will be applied to the most recent price..
+Exponential Moving Average (= exponentially weighted moving average) = average of prices, but places more weight on recent prices. The weighting applied to the most recent price depends on the selected period of the moving average. The shorter the period for the EMA, the more weight that will be applied to the most recent price.
 
 Stochastic Oscillator %K and %D = momentum indicator that compare, over a certain period of time, the closing price of a security to the range of its prices. 
 ```
@@ -75,7 +75,7 @@ NB:   0.830599 (0.012240)
 ![](Images/1.png)
 
 ## Results
-
+We see that our returns are indeed positive and in line with actual market returns eventhough actual returns are slightly higher in some periods.
 
 ![](Images/9.png)
 ![](Images/2.png)
@@ -83,6 +83,7 @@ NB:   0.830599 (0.012240)
 
 ![](Images/7.png)
 
+Based on the return from our strategy, we do not deviate that much from the actual market return. Indeed, the achieved momentum trading strategy made us well predict the stock prices direction to invest/desinvest in order to make profits. However, as our accuracy is not 100% (but more than 96%) therefore, we made relatively few losses compared to the actual returns. 
 
 ## References
 
