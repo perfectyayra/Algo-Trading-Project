@@ -75,7 +75,7 @@ NB:   0.830599 (0.012240)
 ![](Images/1.png)
 
 ## Results
-
+We see that our returns are indeed positive and in line with actual market retunrs eventhough market returns is slightly higher in some periods.
 
 ![](Images/9.png)
 ![](Images/2.png)
