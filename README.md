@@ -11,64 +11,41 @@ Mathilde Bouvier      1702010703
 Faruk Yucel           1702010705
 
 
-## Introduction
+
 ```
 "Better stock prices direction prediction is a key reference for better trading strategy and decision
 making by ordinary investors and financial experts" (Kap, Chiu, Lu and Yang; 2013).
 ```
 
-## Objective
+## Introduction
 
-Our project aims to implement a momentum strategy based on Machine Learning methods. The data consists of Date, Open, High, Low, Close and Volume. We calculated our predictors based on various technical indicators i.e. Exponential Moving Average, Stochastic Oscillator %K and %D, Relative Strength Index (RSI), Rate Of Change (ROC), Momentum (MOM) on which model was trained in order to forecast the signal for buy and sell. We create a Simple Moving Averages (SMA) of a time series with differing lookback periods, 30 days and 120 days. If the short moving average exceeds the long moving average then we go long, if the long moving average exceeds the short moving average then we exit. 
+Due to increasingly large volume of data, manually analyzing data for some tasks like predicting stock market movements has become impractical if not impossible for humans hence the need for automation. By providing large amount of data, machine learning algorithms explore the data and search for a model that will achieve the programmer’s goal. The objective of our project is to implement momentum strategy using machine learning. We tried to predict trading signals using machine learning techniques based on a set of rules using technical indicators. 
 
-## Feature Selection
+## Methodology
 
-Exponential Moving Average (= exponentially weighted moving average) = average of prices, but places more weight on recent prices. The weighting applied to the most recent price depends on the selected period of the moving average. The shorter the period for the EMA, the more weight that will be applied to the most recent price.
+We formulated the problem of stock trading decision as a classification problem with two different classes: buy and sell. The aim of this project is to identification of the most efficient classifier based on some metrics.
+We used some momentum and volatility technical indicators with time periods of 7, 14 and 28 days as predictors. Since, some of these indicators may be irrelevant for our data. We used random forest variable importance technique to figure out the insignificant predictors. As a result, we obtained these relevant indicators: Relative Strength Index, Commodity Channel Index, Momentum(for time period=7), William’s %R , Ultimate Oscillator, Rate of Change. These indicators are then standardized to be fed as input in different models.
 
-Stochastic Oscillator %K and %D = momentum indicator that compare, over a certain period of time, the closing price of a security to the range of its prices. 
-```
-Where %K = 100(C - L14) / (H14 - L14)
-C = the most recent closing price
-L = the low of the 14 previous trading sessions
-H14 = the highest price traded during the same 14-day period
-%K= the current market rate for the currency pair
-%D = 3-period moving average of %K
-```
+As usual machine learning can be divided into two stages. First stage is when the model is trained, and a second one, in which the system classifies the data accordingly to the technical indicators trained during the stage one. The result of the analysis is the predicted trend of the market index, which can be used to set out some trading rules:
+• If the next day trend is Uptrend, then the decision is BUY
+• If BUY decision already exists, then HOLD
+• If the next day trend is Downtrend, then the decision is SELL
+• If SELL decision already exists, then HOLD
+According to the result obtained with these rules, the return of strategy has been calculated.
 
-Relative Strength Index (RSI) = momentum indicator that compare, over a certain period of time, the magnitude of recent gains and losses to measure speed and change of price movements of a security.
-```
-Where: RSI = 100 - 100 / (1 + RS)
-RS = Average gain of up/loss of down periods during the specified time frame.
-```
 
-Rate Of Change (ROC) = compares the current price with the previous price from a selected number of periods ago. The current price is divided by the previous price and expressed as a percentage. This indicator is also commonly known as a momentum indicator.
-
-Momentum (MOM) = The Momentum (MOM) indicator compares the current price with the previous price from a selected number of periods ago. This indicator is similar to the “Rate of Change” indicator, but the MOM does not normalize the price, so different instruments can have different indicator values based on their point values..
 
 ## Data
 
-We pulled the daily historical data from Morningstar. We chose 4 stocks (BIDU, MSFT, AAPL and TXN) in the technology sector of the NASDAQ. The time period is from 01/01/12 to 31/12/17.
+We pulled the daily historical data from Morningstar. We chose 4 stocks (BIDU, MSFT, AAPL and TXN) in the technology sector (NDXT index) of the NASDAQ. The time period is from 01/01/2007 to 31/12/2017. The dataset is composed of 6 variables: date, opening price of the day, highest price of the day, lowest price of the day, closing price of the day, traded volume. We used 80% of this data as our training set and 20% as test set.
 
 ## Model
-
-We realized the following methods:
+We used the following models and an ensemble of these models.
 - KNN
 - Decision Tree
 - Random Forest
 - SVM
 - Gaussian Naïve Bayes
-
-
-
-KNN:  0.957338 (0.004066)
-
-CART: 0.947136 (0.011638)
-
-RF:   0.966495 (0.004955)
-
-SVM:  0.932570 (0.008892)
-
-NB:   0.830599 (0.012240)
 
 
 
