@@ -54,7 +54,6 @@ We used the following models and an ensemble of these models.
 
 
 
-![](Images/1.png)
 
 ## Results
 We see that our returns are indeed positive and in line with actual market returns eventhough actual returns are slightly higher in some periods.
