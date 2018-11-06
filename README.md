@@ -23,7 +23,7 @@ Due to increasingly large volume of data, manually analyzing data for some tasks
 
 ## Methodology
 
-We formulated the problem of stock trading decision as a classification problem with two different classes: buy and sell. The aim of this project is to identification of the most efficient classifier based on some metrics.
+We formulated the problem of stock trading decision as a classification problem with two different classes: buy and sell. We aim to identify the most efficient classifier based on some metrics.
 We used some momentum and volatility technical indicators with time periods of 7, 14 and 28 days as predictors. Since, some of these indicators may be irrelevant for our data. We used random forest variable importance technique to figure out the insignificant predictors. As a result, we obtained these relevant indicators: Relative Strength Index, Commodity Channel Index, Momentum(for time period=7), William’s %R , Ultimate Oscillator, Rate of Change. These indicators are then standardized to be fed as input in different models.
 
 As usual machine learning can be divided into two stages. First stage is when the model is trained, and a second one, in which the system classifies the data accordingly to the technical indicators trained during the stage one. The result of the analysis is the predicted trend of the market index, which can be used to set out some trading rules:
